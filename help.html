@@ -30,11 +30,30 @@
         color:darkred;
         font-weight: bold;
     }
+    
+    .btnBack {
+        background-color: darkred;
+        color:white;
+        font-weight:bold;
+        font-size:15px;
+        padding-left:15px;
+        padding-right:15px;
+        padding-top:5px;
+        padding-bottom:6px;
+        border:0;
+        border-radius:5px;
+    }
 </style>
 <body>
     <div class="mainBody">
         <h1>Help and Assistance is Available!</h1>
         <p>For assistance, please email us at <a href="mailto:us514@alphagraphics.com">us514@alphagraphics.com</a><br>or call us at <span class="phone">412-261-1300</span></p>
+        <button class="btnBack" onclick="goBack()">Go back to the Storefront</button>
     </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
